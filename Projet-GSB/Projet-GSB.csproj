@@ -127,6 +127,10 @@
     <Compile Include="Mission2.Designer.cs">
       <DependentUpon>Mission2.cs</DependentUpon>
     </Compile>
+    <Compile Include="ModeleConnexion.cs" />
+    <Compile Include="ModeleM1.cs" />
+    <Compile Include="ModeleM2.cs" />
+    <Compile Include="ModeleM3.cs" />
     <Compile Include="MOTIF.cs">
       <DependentUpon>EDMX.tt</DependentUpon>
     </Compile>

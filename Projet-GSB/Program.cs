@@ -15,8 +15,14 @@ namespace Projet_GSB
         static void Main()
         {
             Application.EnableVisualStyles();
-            Application.SetCompatibleTextRenderingDefault(false);
+            Application.SetCompatibleTextRenderingDefault(false); 
+            ModeleM1.init();
+            ModeleM2.init();
+            ModeleM3.init();
+            ModeleConnexion.init();
             Application.Run(new Mission1());
+            
+
         }
     }
 }

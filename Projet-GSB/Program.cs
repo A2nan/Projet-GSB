@@ -20,7 +20,7 @@ namespace Projet_GSB
             ModeleM2.init();
             ModeleM3.init();
             ModeleConnexion.init();
-            Application.Run(new Mission1());
+            Application.Run(new FMenu());
             
 
         }

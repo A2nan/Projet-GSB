@@ -91,11 +91,11 @@
     <Compile Include="FMenu.Designer.cs">
       <DependentUpon>FMenu.cs</DependentUpon>
     </Compile>
-    <Compile Include="Form1.cs">
+    <Compile Include="Mission1.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="Mission1.Designer.cs">
+      <DependentUpon>Mission1.cs</DependentUpon>
     </Compile>
     <Compile Include="FraisForfait.cs">
       <DependentUpon>EDMX.tt</DependentUpon>
@@ -163,8 +163,8 @@
     <EmbeddedResource Include="FMenu.resx">
       <DependentUpon>FMenu.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Form1.resx">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <EmbeddedResource Include="Mission1.resx">
+      <DependentUpon>Mission1.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Mission 3.resx">
       <DependentUpon>Mission 3.cs</DependentUpon>

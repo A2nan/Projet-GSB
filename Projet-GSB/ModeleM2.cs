@@ -14,6 +14,10 @@ namespace Projet_GSB
         {
             laConnexion = new NerdsUnitedEntities();
         }
+        public static void chargeVisiteurConnect(string lid)
+        {
+            leVisiteurConnect = laConnexion.Visiteur.Where(x => x.idVisiteur == lid).ToList()[0];
+        }
 
     }
 

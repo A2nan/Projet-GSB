@@ -15,11 +15,29 @@ namespace Projet_GSB
         public FConnection()
         {
             InitializeComponent();
+            
+
+        }
+
+        //et on ajoute la méthode:
+        public static void ThreadProc()
+        {
+            Application.Run(new FMenu());
         }
 
         private void label1_Click(object sender, EventArgs e)
         {
+            
+        }
 
+        private void connexion_Click(object sender, EventArgs e)
+        {
+            if()
+            {
+                System.Threading.Thread t = new System.Threading.Thread(new System.Threading.ThreadStart(ThreadProc));
+                t.Start();
+                this.Close();
+            }
         }
     }
 }

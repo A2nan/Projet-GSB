@@ -46,6 +46,7 @@
             // 
             this.textBox2.Location = new System.Drawing.Point(100, 149);
             this.textBox2.Name = "textBox2";
+            this.textBox2.PasswordChar = '*';
             this.textBox2.Size = new System.Drawing.Size(334, 20);
             this.textBox2.TabIndex = 1;
             // 
@@ -76,6 +77,7 @@
             this.connexion.TabIndex = 4;
             this.connexion.Text = "Connexion";
             this.connexion.UseVisualStyleBackColor = true;
+            this.connexion.Click += new System.EventHandler(this.connexion_Click);
             // 
             // FConnection
             // 

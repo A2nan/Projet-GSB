@@ -32,12 +32,19 @@ namespace Projet_GSB
 
         private void connexion_Click(object sender, EventArgs e)
         {
-            if()
+            messageinfo.Text = ModeleConnexion.validConnexion(txtid.Text, txtmdp.Text);
+            if (ModeleConnexion.ConnexionValide)
             {
+                MessageBox.Show("Bienvenue " + ModeleConnexion.UtilisateurConnecte.prenom + " " + ModeleConnexion.UtilisateurConnecte.nom);
                 System.Threading.Thread t = new System.Threading.Thread(new System.Threading.ThreadStart(ThreadProc));
                 t.Start();
                 this.Close();
             }
+        }
+
+        private void label1_Click_1(object sender, EventArgs e)
+        {
+
         }
     }
 }

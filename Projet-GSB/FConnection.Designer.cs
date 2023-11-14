@@ -28,27 +28,28 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.txtid = new System.Windows.Forms.TextBox();
+            this.txtmdp = new System.Windows.Forms.TextBox();
             this.Identifiant = new System.Windows.Forms.Label();
             this.mdp = new System.Windows.Forms.Label();
             this.connexion = new System.Windows.Forms.Button();
+            this.messageinfo = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
-            // textBox1
+            // txtid
             // 
-            this.textBox1.Location = new System.Drawing.Point(100, 89);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(334, 20);
-            this.textBox1.TabIndex = 0;
+            this.txtid.Location = new System.Drawing.Point(100, 89);
+            this.txtid.Name = "txtid";
+            this.txtid.Size = new System.Drawing.Size(334, 20);
+            this.txtid.TabIndex = 0;
             // 
-            // textBox2
+            // txtmdp
             // 
-            this.textBox2.Location = new System.Drawing.Point(100, 149);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.PasswordChar = '*';
-            this.textBox2.Size = new System.Drawing.Size(334, 20);
-            this.textBox2.TabIndex = 1;
+            this.txtmdp.Location = new System.Drawing.Point(100, 149);
+            this.txtmdp.Name = "txtmdp";
+            this.txtmdp.PasswordChar = '*';
+            this.txtmdp.Size = new System.Drawing.Size(334, 20);
+            this.txtmdp.TabIndex = 1;
             // 
             // Identifiant
             // 
@@ -79,16 +80,26 @@
             this.connexion.UseVisualStyleBackColor = true;
             this.connexion.Click += new System.EventHandler(this.connexion_Click);
             // 
+            // messageinfo
+            // 
+            this.messageinfo.AutoSize = true;
+            this.messageinfo.Location = new System.Drawing.Point(97, 211);
+            this.messageinfo.Name = "messageinfo";
+            this.messageinfo.Size = new System.Drawing.Size(0, 13);
+            this.messageinfo.TabIndex = 5;
+            this.messageinfo.Click += new System.EventHandler(this.label1_Click_1);
+            // 
             // FConnection
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.messageinfo);
             this.Controls.Add(this.connexion);
             this.Controls.Add(this.mdp);
             this.Controls.Add(this.Identifiant);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.txtmdp);
+            this.Controls.Add(this.txtid);
             this.Name = "FConnection";
             this.Text = "FConnexion";
             this.ResumeLayout(false);
@@ -98,10 +109,11 @@
 
         #endregion
 
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox txtid;
+        private System.Windows.Forms.TextBox txtmdp;
         private System.Windows.Forms.Label Identifiant;
         private System.Windows.Forms.Label mdp;
         private System.Windows.Forms.Button connexion;
+        private System.Windows.Forms.Label messageinfo;
     }
 }

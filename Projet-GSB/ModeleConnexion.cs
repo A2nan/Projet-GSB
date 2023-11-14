@@ -43,7 +43,7 @@ namespace Projet_GSB
             List<Visiteur> ListeVisiteur = laConnexion.Visiteur.Where(x => x.identifiant == id).ToList();
             if(ListeVisiteur.Count == 0)
             {
-                message = "erreur : utlisateur innexistant";
+                message = "erreur : utlisateur innexistant ou mot de passe incorrect";
                 connexionValide = false;
             }
             else
@@ -64,7 +64,7 @@ namespace Projet_GSB
                     }
                     else
                     {
-                        message = "mot de passe incorrect";
+                        message = "erreur : utlisateur innexistant ou mot de passe incorrect";
                         connexionValide = false;
                     }
                 }

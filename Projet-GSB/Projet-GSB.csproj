@@ -91,6 +91,12 @@
     <Compile Include="FMenu.Designer.cs">
       <DependentUpon>FMenu.cs</DependentUpon>
     </Compile>
+    <Compile Include="FrainsEngages.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrainsEngages.Designer.cs">
+      <DependentUpon>FrainsEngages.cs</DependentUpon>
+    </Compile>
     <Compile Include="Mission1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -162,6 +168,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FMenu.resx">
       <DependentUpon>FMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrainsEngages.resx">
+      <DependentUpon>FrainsEngages.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Mission1.resx">
       <DependentUpon>Mission1.cs</DependentUpon>

@@ -10,16 +10,11 @@ using System.Windows.Forms;
 
 namespace Projet_GSB
 {
-    public partial class Mission2 : Form
+    public partial class AMrapport : Form
     {
-        public Mission2()
+        public AMrapport()
         {
             InitializeComponent();
-        }
-
-        private void Mission2_Load(object sender, EventArgs e)
-        {
-
         }
     }
 }

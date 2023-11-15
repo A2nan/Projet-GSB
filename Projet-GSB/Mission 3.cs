@@ -16,5 +16,11 @@ namespace Projet_GSB
         {
             InitializeComponent();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            FrainsEngages fEngages = new FrainsEngages();
+            fEngages.Show();
+        }
     }
 }

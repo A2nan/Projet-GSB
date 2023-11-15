@@ -16,5 +16,10 @@ namespace Projet_GSB
         {
             InitializeComponent();
         }
+
+        private void consulterEtMàjInfoToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

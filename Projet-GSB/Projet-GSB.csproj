@@ -91,6 +91,12 @@
     <Compile Include="FMenu.Designer.cs">
       <DependentUpon>FMenu.cs</DependentUpon>
     </Compile>
+    <Compile Include="FmodifMdp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FmodifMdp.Designer.cs">
+      <DependentUpon>FmodifMdp.cs</DependentUpon>
+    </Compile>
     <Compile Include="Mission1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -162,6 +168,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FMenu.resx">
       <DependentUpon>FMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FmodifMdp.resx">
+      <DependentUpon>FmodifMdp.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Mission1.resx">
       <DependentUpon>Mission1.cs</DependentUpon>

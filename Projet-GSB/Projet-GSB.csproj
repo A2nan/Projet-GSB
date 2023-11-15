@@ -163,6 +163,9 @@
     <Compile Include="Visiteur.cs">
       <DependentUpon>EDMX.tt</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="AMrapport.resx">
+      <DependentUpon>AMrapport.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FConnection.resx">
       <DependentUpon>FConnection.cs</DependentUpon>
     </EmbeddedResource>

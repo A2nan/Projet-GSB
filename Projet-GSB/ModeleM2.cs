@@ -13,6 +13,11 @@ namespace Projet_GSB
         public static void init()
         {
             laConnexion = new NerdsUnitedEntities();
+
+            public static List<Visiteur> listeVisiteur()
+            {
+                return laConnexion.Visiteur.ToList();
+            }
         }
         public static void chargeVisiteurConnect(string lid)
         {

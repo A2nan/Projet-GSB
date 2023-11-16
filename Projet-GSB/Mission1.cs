@@ -21,5 +21,16 @@ namespace Projet_GSB
         {
 
         }
+
+        private void consulterSesRésponsabilitéToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void modifierMdpToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FmodifMdp FmodifMdp = new FmodifMdp();
+            FmodifMdp.Show();
+        }
     }
 }

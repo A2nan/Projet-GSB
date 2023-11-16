@@ -52,21 +52,23 @@
             // consulterEtMàjInfoToolStripMenuItem
             // 
             this.consulterEtMàjInfoToolStripMenuItem.Name = "consulterEtMàjInfoToolStripMenuItem";
-            this.consulterEtMàjInfoToolStripMenuItem.Size = new System.Drawing.Size(130, 20);
-            this.consulterEtMàjInfoToolStripMenuItem.Text = "Consulter et màj info";
+            this.consulterEtMàjInfoToolStripMenuItem.Size = new System.Drawing.Size(162, 20);
+            this.consulterEtMàjInfoToolStripMenuItem.Text = "Consulter vos informations";
             this.consulterEtMàjInfoToolStripMenuItem.Click += new System.EventHandler(this.consulterEtMàjInfoToolStripMenuItem_Click);
             // 
             // consulterSesRésponsabilitéToolStripMenuItem
             // 
             this.consulterSesRésponsabilitéToolStripMenuItem.Name = "consulterSesRésponsabilitéToolStripMenuItem";
-            this.consulterSesRésponsabilitéToolStripMenuItem.Size = new System.Drawing.Size(165, 20);
-            this.consulterSesRésponsabilitéToolStripMenuItem.Text = "Consulter ses résponsabilité";
+            this.consulterSesRésponsabilitéToolStripMenuItem.Size = new System.Drawing.Size(167, 20);
+            this.consulterSesRésponsabilitéToolStripMenuItem.Text = "Consulter vos résponsabilité";
+            this.consulterSesRésponsabilitéToolStripMenuItem.Click += new System.EventHandler(this.consulterSesRésponsabilitéToolStripMenuItem_Click);
             // 
             // modifierMdpToolStripMenuItem
             // 
             this.modifierMdpToolStripMenuItem.Name = "modifierMdpToolStripMenuItem";
-            this.modifierMdpToolStripMenuItem.Size = new System.Drawing.Size(92, 20);
-            this.modifierMdpToolStripMenuItem.Text = "modifier mdp";
+            this.modifierMdpToolStripMenuItem.Size = new System.Drawing.Size(167, 20);
+            this.modifierMdpToolStripMenuItem.Text = "Modifier votre mot de passe";
+            this.modifierMdpToolStripMenuItem.Click += new System.EventHandler(this.modifierMdpToolStripMenuItem_Click);
             // 
             // contextMenuStrip1
             // 

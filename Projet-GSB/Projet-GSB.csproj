@@ -82,6 +82,12 @@
     <Compile Include="FConnection.Designer.cs">
       <DependentUpon>FConnection.cs</DependentUpon>
     </Compile>
+    <Compile Include="FConsultInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FConsultInfo.Designer.cs">
+      <DependentUpon>FConsultInfo.cs</DependentUpon>
+    </Compile>
     <Compile Include="fichefrais.cs">
       <DependentUpon>EDMX.tt</DependentUpon>
     </Compile>
@@ -165,6 +171,9 @@
     </Compile>
     <EmbeddedResource Include="FConnection.resx">
       <DependentUpon>FConnection.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FConsultInfo.resx">
+      <DependentUpon>FConsultInfo.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FMenu.resx">
       <DependentUpon>FMenu.cs</DependentUpon>

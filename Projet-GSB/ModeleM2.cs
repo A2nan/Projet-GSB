@@ -14,10 +14,27 @@ namespace Projet_GSB
         {
             laConnexion = new NerdsUnitedEntities();
 
-            public static List<Visiteur> listeVisiteur()
-            {
-                return laConnexion.Visiteur.ToList();
-            }
+         
+        }
+
+        public static List<Visiteur> listeVisiteur()
+        {
+            return laConnexion.Visiteur.ToList();
+        }
+
+        public static List<MEDECIN> listeMedecin()
+        {
+            return laConnexion.MEDECIN.ToList();
+        }
+
+        public static List<RAPPORT> listeRapport()
+        {
+            return laConnexion.RAPPORT.ToList();
+        }
+        
+        public static List<OFFRIR> listeOFFRIR()
+        {
+            return laConnexion .OFFRIR.ToList();
         }
         public static void chargeVisiteurConnect(string lid)
         {

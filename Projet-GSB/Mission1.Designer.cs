@@ -85,6 +85,7 @@
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "Mission1";
             this.Text = "Mission 1";
+            this.Load += new System.EventHandler(this.Mission1_Load);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);

@@ -19,18 +19,24 @@ namespace Projet_GSB
 
         private void consulterEtMàjInfoToolStripMenuItem_Click(object sender, EventArgs e)
         {
-
+            FConsultInfo fConsultInfo = new FConsultInfo();
+            fConsultInfo.Show();
         }
 
         private void consulterSesRésponsabilitéToolStripMenuItem_Click(object sender, EventArgs e)
         {
-
+            
         }
 
         private void modifierMdpToolStripMenuItem_Click(object sender, EventArgs e)
         {
             FmodifMdp FmodifMdp = new FmodifMdp();
             FmodifMdp.Show();
+        }
+
+        private void Mission1_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

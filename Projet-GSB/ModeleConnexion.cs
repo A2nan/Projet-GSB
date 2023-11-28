@@ -10,7 +10,7 @@ namespace Projet_GSB
 {
     public static class ModeleConnexion
     {
-        private static NerdsUnitedEntities laConnexion;
+        public static NerdsUnitedEntities laConnexion;
        
         public static void init()
         {

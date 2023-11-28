@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.textNom = new System.Windows.Forms.Label();
             this.textPrenom = new System.Windows.Forms.Label();
@@ -39,6 +40,13 @@
             this.textBoxRue = new System.Windows.Forms.TextBox();
             this.textBoxPrenom = new System.Windows.Forms.TextBox();
             this.textBoxNom = new System.Windows.Forms.TextBox();
+            this.bindingSource1 = new System.Windows.Forms.BindingSource(this.components);
+            this.label1 = new System.Windows.Forms.Label();
+            this.textBoxEmbauche = new System.Windows.Forms.TextBox();
+            this.buttonAnnuler = new System.Windows.Forms.Button();
+            this.buttonValider = new System.Windows.Forms.Button();
+            this.labelinfo = new System.Windows.Forms.Label();
+            ((System.ComponentModel.ISupportInitialize)(this.bindingSource1)).BeginInit();
             this.SuspendLayout();
             // 
             // textBox1
@@ -133,12 +141,67 @@
             this.textBoxNom.Name = "textBoxNom";
             this.textBoxNom.Size = new System.Drawing.Size(100, 20);
             this.textBoxNom.TabIndex = 12;
+            this.textBoxNom.TextChanged += new System.EventHandler(this.textBoxNom_TextChanged);
+            // 
+            // bindingSource1
+            // 
+            this.bindingSource1.CurrentChanged += new System.EventHandler(this.bindingSource1_CurrentChanged);
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(270, 311);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(99, 13);
+            this.label1.TabIndex = 13;
+            this.label1.Text = "DATE EMBAUCHE";
+            this.label1.Click += new System.EventHandler(this.label1_Click);
+            // 
+            // textBoxEmbauche
+            // 
+            this.textBoxEmbauche.Location = new System.Drawing.Point(375, 308);
+            this.textBoxEmbauche.Name = "textBoxEmbauche";
+            this.textBoxEmbauche.Size = new System.Drawing.Size(100, 20);
+            this.textBoxEmbauche.TabIndex = 14;
+            // 
+            // buttonAnnuler
+            // 
+            this.buttonAnnuler.Location = new System.Drawing.Point(273, 387);
+            this.buttonAnnuler.Name = "buttonAnnuler";
+            this.buttonAnnuler.Size = new System.Drawing.Size(75, 23);
+            this.buttonAnnuler.TabIndex = 15;
+            this.buttonAnnuler.Text = "Annuler";
+            this.buttonAnnuler.UseVisualStyleBackColor = true;
+            this.buttonAnnuler.Click += new System.EventHandler(this.buttonAnnuler_Click);
+            // 
+            // buttonValider
+            // 
+            this.buttonValider.Location = new System.Drawing.Point(416, 387);
+            this.buttonValider.Name = "buttonValider";
+            this.buttonValider.Size = new System.Drawing.Size(75, 23);
+            this.buttonValider.TabIndex = 16;
+            this.buttonValider.Text = "Mettre à jour";
+            this.buttonValider.UseVisualStyleBackColor = true;
+            this.buttonValider.Click += new System.EventHandler(this.buttonValider_Click);
+            // 
+            // labelinfo
+            // 
+            this.labelinfo.AutoSize = true;
+            this.labelinfo.Location = new System.Drawing.Point(359, 350);
+            this.labelinfo.Name = "labelinfo";
+            this.labelinfo.Size = new System.Drawing.Size(0, 13);
+            this.labelinfo.TabIndex = 17;
             // 
             // FConsultInfo
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.labelinfo);
+            this.Controls.Add(this.buttonValider);
+            this.Controls.Add(this.buttonAnnuler);
+            this.Controls.Add(this.textBoxEmbauche);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.textBoxNom);
             this.Controls.Add(this.textBoxPrenom);
             this.Controls.Add(this.textBoxRue);
@@ -153,6 +216,7 @@
             this.Name = "FConsultInfo";
             this.Text = "FConsultInfo";
             this.Load += new System.EventHandler(this.FConsultInfo_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.bindingSource1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -171,5 +235,11 @@
         private System.Windows.Forms.TextBox textBoxRue;
         private System.Windows.Forms.TextBox textBoxPrenom;
         private System.Windows.Forms.TextBox textBoxNom;
+        private System.Windows.Forms.BindingSource bindingSource1;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.TextBox textBoxEmbauche;
+        private System.Windows.Forms.Button buttonAnnuler;
+        private System.Windows.Forms.Button buttonValider;
+        private System.Windows.Forms.Label labelinfo;
     }
 }

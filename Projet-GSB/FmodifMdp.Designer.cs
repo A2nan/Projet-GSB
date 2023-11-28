@@ -112,6 +112,7 @@
             this.currentmdp.Name = "currentmdp";
             this.currentmdp.Size = new System.Drawing.Size(192, 20);
             this.currentmdp.TabIndex = 7;
+            this.currentmdp.TextChanged += new System.EventHandler(this.currentmdp_TextChanged);
             // 
             // mdpverif
             // 

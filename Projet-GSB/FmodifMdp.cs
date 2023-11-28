@@ -26,5 +26,10 @@ namespace Projet_GSB
         {
 
         }
+
+        private void currentmdp_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

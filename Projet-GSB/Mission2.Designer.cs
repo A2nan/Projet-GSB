@@ -48,8 +48,10 @@
             this.label6 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.bsVisiteur = new System.Windows.Forms.BindingSource(this.components);
+            this.bsRapport = new System.Windows.Forms.BindingSource(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bsVisiteur)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bsRapport)).BeginInit();
             this.SuspendLayout();
             // 
             // button1
@@ -96,6 +98,7 @@
             this.checkBox1.TabIndex = 4;
             this.checkBox1.Text = "Liste";
             this.checkBox1.UseVisualStyleBackColor = true;
+            this.checkBox1.CheckedChanged += new System.EventHandler(this.checkBox1_CheckedChanged);
             // 
             // textBox1
             // 
@@ -115,6 +118,7 @@
             // 
             this.textBox3.Location = new System.Drawing.Point(474, 12);
             this.textBox3.Name = "textBox3";
+            this.textBox3.ReadOnly = true;
             this.textBox3.Size = new System.Drawing.Size(100, 20);
             this.textBox3.TabIndex = 7;
             // 
@@ -122,6 +126,7 @@
             // 
             this.textBox4.Location = new System.Drawing.Point(266, 38);
             this.textBox4.Name = "textBox4";
+            this.textBox4.ReadOnly = true;
             this.textBox4.Size = new System.Drawing.Size(100, 20);
             this.textBox4.TabIndex = 8;
             // 
@@ -129,6 +134,7 @@
             // 
             this.textBox5.Location = new System.Drawing.Point(77, 38);
             this.textBox5.Name = "textBox5";
+            this.textBox5.ReadOnly = true;
             this.textBox5.Size = new System.Drawing.Size(100, 20);
             this.textBox5.TabIndex = 9;
             // 
@@ -136,6 +142,7 @@
             // 
             this.textBox6.Location = new System.Drawing.Point(266, 12);
             this.textBox6.Name = "textBox6";
+            this.textBox6.ReadOnly = true;
             this.textBox6.Size = new System.Drawing.Size(100, 20);
             this.textBox6.TabIndex = 10;
             // 
@@ -143,6 +150,7 @@
             // 
             this.textBox7.Location = new System.Drawing.Point(77, 12);
             this.textBox7.Name = "textBox7";
+            this.textBox7.ReadOnly = true;
             this.textBox7.Size = new System.Drawing.Size(100, 20);
             this.textBox7.TabIndex = 11;
             // 
@@ -201,6 +209,10 @@
             this.label1.Tag = "";
             this.label1.Text = "NOM";
             // 
+            // bsVisiteur
+            // 
+            this.bsVisiteur.CurrentChanged += new System.EventHandler(this.bsVisiteur_CurrentChanged);
+            // 
             // Mission2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -229,6 +241,7 @@
             this.Load += new System.EventHandler(this.Mission2_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.bsVisiteur)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bsRapport)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -255,5 +268,6 @@
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.BindingSource bsVisiteur;
+        private System.Windows.Forms.BindingSource bsRapport;
     }
 }

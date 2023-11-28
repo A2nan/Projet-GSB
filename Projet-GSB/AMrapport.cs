@@ -36,5 +36,10 @@ namespace Projet_GSB
         {
 
         }
+
+        private void AMrapport_Load(object sender, EventArgs e)
+        {
+            
+        }
     }
 }

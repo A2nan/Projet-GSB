@@ -272,6 +272,7 @@
             this.Controls.Add(this.textBox1);
             this.Name = "AMrapport";
             this.Text = "AMrapport";
+            this.Load += new System.EventHandler(this.AMrapport_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView3)).EndInit();

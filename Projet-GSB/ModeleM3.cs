@@ -17,6 +17,10 @@ namespace Projet_GSB
 
     }
 
+   /* public static list<FraisForfait> listeForfait() 
+    {
+        return laConnexion.FraisForfait.ToList();
+    }*/
 
 }
 

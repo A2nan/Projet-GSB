@@ -22,5 +22,11 @@ namespace Projet_GSB
             FrainsEngages fEngages = new FrainsEngages();
             fEngages.Show();
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            FicheActuel FficheActuel = new FicheActuel();
+            FficheActuel.Show();
+        }
     }
 }

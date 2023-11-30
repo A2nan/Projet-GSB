@@ -32,7 +32,13 @@ namespace Projet_GSB
         {
             if (checkBox1.Checked)
             {
-                
+                checkBox2.Enabled = true;
+                checkBox3.Enabled = true;  
+            }
+            else
+            {
+                checkBox2.Enabled = false;
+                checkBox3.Enabled = false;
             }
         }
     }

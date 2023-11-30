@@ -25,7 +25,24 @@ namespace Projet_GSB
 
         //et les méthodes :
 
-        private static string GetMd5Hash(string PasswdSaisi)
+        public static bool CorrectPassword(string mdp, bool Connexion)
+        {
+            bool vretour = false;
+            if (Connexion == connexionValide)
+            {
+                string mdpHash = GetMd5Hash(mdp);
+                if (string.Equals(mdpHash, utilisateurConnecte.password))
+                {
+                    vretour = true;
+                }
+            }
+            return vretour;
+        }
+
+
+
+
+        public static string GetMd5Hash(string PasswdSaisi)
         {
             byte[] inputBytes = System.Text.Encoding.ASCII.GetBytes(PasswdSaisi);
             byte[] hash = (MD5.Create()).ComputeHash(inputBytes);
@@ -56,8 +73,7 @@ namespace Projet_GSB
                 else
                 {
                     utilisateurConnecte = ListeVisiteur[0];
-                    string mdpHash = GetMd5Hash(mp);
-                    if(string.Equals(mdpHash, utilisateurConnecte.password))
+                    if(CorrectPassword(mp, false))
                     {
                         message = "connexion reussi";
                         connexionValide = true;

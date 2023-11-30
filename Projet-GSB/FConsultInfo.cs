@@ -34,7 +34,7 @@ namespace Projet_GSB
 
         private void bindingSource1_CurrentChanged(object sender, EventArgs e)
         {
-            Visiteur visiteurconnecte = (Visiteur)bindingSource1.Current;
+            Visiteur visiteurconnecte = ModeleConnexion.UtilisateurConnecte;
             textBoxNom.Text = visiteurconnecte.nom.ToString(); 
             textBoxPrenom.Text = visiteurconnecte.prenom.ToString();
             textBoxRue.Text = visiteurconnecte.rue.ToString(); 
@@ -54,7 +54,8 @@ namespace Projet_GSB
             if (ModeleM1.modifInfo(textBoxNom.Text, textBoxPrenom.Text,textBoxVille.Text, textBoxRue.Text, textBoxCp.Text, textBoxEmbauche.Text))
             {
                 labelinfo.Text = "Information mis à jour";
-                MessageBox.Show("Infomations mis à juor avec succès");
+                MessageBox.Show("Infomations mis à jour avec succès");
+                this.Close();
 
             }
             else

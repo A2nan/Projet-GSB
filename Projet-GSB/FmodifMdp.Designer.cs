@@ -75,6 +75,7 @@
             this.Valider.TabIndex = 3;
             this.Valider.Text = "Valider";
             this.Valider.UseVisualStyleBackColor = true;
+            this.Valider.Click += new System.EventHandler(this.Valider_Click);
             // 
             // Annuler
             // 

@@ -1,6 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data.Entity.Core.Common.EntitySql;
 using System.Linq;
+using System.Runtime.CompilerServices;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -41,6 +43,38 @@ namespace Projet_GSB
                 vretour = false;
             }
             return vretour;
+
+        }
+
+        public static string modifMdp(string mdp, string Newmdp, string Newmdp2)
+        {
+            string message = "";
+
+            if (ModeleConnexion.CorrectPassword(mdp, true))
+            {
+
+                if (string.Equals(Newmdp, Newmdp2))
+                {
+                    try
+                    {
+                        string mdpHash = ModeleConnexion.GetMd5Hash(Newmdp);
+                        ModeleConnexion.UtilisateurConnecte.password = mdpHash;
+                        ModeleConnexion.laConnexion.SaveChanges();
+                        message = "mot de passe modifié";
+                        
+                    }
+                    catch(Exception ex)
+                    {
+                        message = "Une erreur est survenu, votre mdp n'a pas été modifier";
+                    }
+                }
+            }
+            else
+            {
+                message = "informations incorrect";
+            }
+
+            return message;
 
         }
 

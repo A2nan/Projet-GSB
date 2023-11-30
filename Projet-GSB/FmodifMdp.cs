@@ -31,5 +31,12 @@ namespace Projet_GSB
         {
 
         }
+
+        private void Valider_Click(object sender, EventArgs e)
+        {
+            string message = ModeleM1.modifMdp(currentmdp.Text, mdpnew.Text, mdpverif.Text);
+            MessageBox.Show(message);
+            this.Close();
+        }
     }
 }

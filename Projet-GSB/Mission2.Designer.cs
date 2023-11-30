@@ -32,7 +32,7 @@
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.DgvRapport = new System.Windows.Forms.DataGridView();
             this.checkBox1 = new System.Windows.Forms.CheckBox();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.textBox2 = new System.Windows.Forms.TextBox();
@@ -51,9 +51,12 @@
             this.bsRapport = new System.Windows.Forms.BindingSource(this.components);
             this.checkBox2 = new System.Windows.Forms.CheckBox();
             this.checkBox3 = new System.Windows.Forms.CheckBox();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            this.cboPraticien = new System.Windows.Forms.ComboBox();
+            this.bsMedecin = new System.Windows.Forms.BindingSource(this.components);
+            ((System.ComponentModel.ISupportInitialize)(this.DgvRapport)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bsVisiteur)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bsRapport)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bsMedecin)).BeginInit();
             this.SuspendLayout();
             // 
             // button1
@@ -83,13 +86,13 @@
             this.button3.Text = "Quitter";
             this.button3.UseVisualStyleBackColor = true;
             // 
-            // dataGridView1
+            // DgvRapport
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(21, 188);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(752, 191);
-            this.dataGridView1.TabIndex = 3;
+            this.DgvRapport.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.DgvRapport.Location = new System.Drawing.Point(21, 188);
+            this.DgvRapport.Name = "DgvRapport";
+            this.DgvRapport.Size = new System.Drawing.Size(752, 191);
+            this.DgvRapport.TabIndex = 3;
             // 
             // checkBox1
             // 
@@ -218,7 +221,7 @@
             // checkBox2
             // 
             this.checkBox2.AutoSize = true;
-            this.checkBox2.Location = new System.Drawing.Point(42, 231);
+            this.checkBox2.Location = new System.Drawing.Point(161, 165);
             this.checkBox2.Name = "checkBox2";
             this.checkBox2.Size = new System.Drawing.Size(80, 17);
             this.checkBox2.TabIndex = 19;
@@ -229,18 +232,31 @@
             // 
             this.checkBox3.AutoSize = true;
             this.checkBox3.Enabled = false;
-            this.checkBox3.Location = new System.Drawing.Point(42, 208);
+            this.checkBox3.Location = new System.Drawing.Point(75, 165);
             this.checkBox3.Name = "checkBox3";
             this.checkBox3.Size = new System.Drawing.Size(80, 17);
             this.checkBox3.TabIndex = 20;
             this.checkBox3.Text = "checkBox3";
             this.checkBox3.UseVisualStyleBackColor = true;
             // 
+            // cboPraticien
+            // 
+            this.cboPraticien.FormattingEnabled = true;
+            this.cboPraticien.Location = new System.Drawing.Point(247, 163);
+            this.cboPraticien.Name = "cboPraticien";
+            this.cboPraticien.Size = new System.Drawing.Size(121, 21);
+            this.cboPraticien.TabIndex = 21;
+            // 
+            // bsMedecin
+            // 
+            this.bsMedecin.CurrentChanged += new System.EventHandler(this.bsMedecin_CurrentChanged);
+            // 
             // Mission2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.cboPraticien);
             this.Controls.Add(this.checkBox3);
             this.Controls.Add(this.checkBox2);
             this.Controls.Add(this.label1);
@@ -257,16 +273,17 @@
             this.Controls.Add(this.textBox2);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.checkBox1);
-            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.DgvRapport);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
             this.Name = "Mission2";
             this.Text = "Mission 2";
             this.Load += new System.EventHandler(this.Mission2_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.DgvRapport)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.bsVisiteur)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.bsRapport)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bsMedecin)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -277,7 +294,7 @@
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView DgvRapport;
         private System.Windows.Forms.CheckBox checkBox1;
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.TextBox textBox2;
@@ -296,5 +313,7 @@
         private System.Windows.Forms.BindingSource bsRapport;
         private System.Windows.Forms.CheckBox checkBox2;
         private System.Windows.Forms.CheckBox checkBox3;
+        private System.Windows.Forms.ComboBox cboPraticien;
+        private System.Windows.Forms.BindingSource bsMedecin;
     }
 }

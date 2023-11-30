@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Xml.Serialization;
 
 namespace Projet_GSB
 {
@@ -20,6 +21,11 @@ namespace Projet_GSB
         private void Mission2_Load(object sender, EventArgs e)
         {
             bsVisiteur.DataSource = ModeleM2.listeVisiteur();
+            bsRapport.DataSource = ModeleM2.listeRapport();
+            cboPraticien.ValueMember = "idMedecin";
+            cboPraticien.DisplayMember = "Nom";
+            cboPraticien.DataSource = bsMedecin;
+            bsMedecin.DataSource = ModeleM2.listeMedecin();
         }
 
         private void bsVisiteur_CurrentChanged(object sender, EventArgs e)
@@ -40,6 +46,16 @@ namespace Projet_GSB
                 checkBox2.Enabled = false;
                 checkBox3.Enabled = false;
             }
+        }
+
+        private void bsMedecin_CurrentChanged(object sender, EventArgs e)
+        {
+            MEDECIN leMedecinChoisi = (MEDECIN)bsMedecin.Current;
+        }
+
+        private void ChangeDGV()
+        {
+           
         }
     }
 }

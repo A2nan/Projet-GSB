@@ -23,10 +23,18 @@ namespace Projet_GSB
             fEngages.Show();
         }
 
-        private void button2_Click(object sender, EventArgs e)
+        private void DGVFiche_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
-            FicheActuel FficheActuel = new FicheActuel();
-            FficheActuel.Show();
+
+        }
+
+        private void Mission3_Load(object sender, EventArgs e)
+        {
+            BSFiche.DataSource = ModeleM3.LesListeFraisDuVisiteurConnec();
+            DGVFiche.DataSource = BSFiche;
+
+            DGVFiche.Columns[1].Visible = true;
+            DGVFiche.Columns[1].HeaderText = "test:";
         }
     }
 }

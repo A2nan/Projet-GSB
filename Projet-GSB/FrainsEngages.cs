@@ -24,23 +24,42 @@ namespace Projet_GSB
 
         private void button1_Click(object sender, EventArgs e)
         {
+            MessageBox.Show("Vous information on était sauvégardé !");
             
+
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
-          
+            MessageBox.Show("Etez vous sur de vouloir annulé ?");
+            
         }
 
-        public partial class LigneFraisForfait
-        {
-            public string idVisiteur { get; set; }
-            public string mois { get; set; }
-            public string idFraisForfait { get; set; }
-            public Nullable<int> quantite { get; set; }
 
+        private void textBox2_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+
+
+
+        private void FFiche(object sender, EventArgs e)
+        {
             
+        }
+
+        private void FrainsEngages_Load(object sender, EventArgs e)
+        {
+            
+
+
         }
     }
 }
-}
+

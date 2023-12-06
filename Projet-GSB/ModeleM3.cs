@@ -10,17 +10,34 @@ namespace Projet_GSB
     {
         private static NerdsUnitedEntities laConnexion;
         private static Visiteur leVisiteurConnect;
+        
+        
         public static void init()
         {
             laConnexion = new NerdsUnitedEntities();
         }
 
+        public static List<FraisForfait> listeFraisForfaits()
+        {
+            return laConnexion.FraisForfait.ToList();
+        }
+
+        public static List<Visiteur> listeVisiteurs() 
+        {
+            return laConnexion.Visiteur.ToList();
+        }
+        public static List<fichefrais> LesListeFraisDuVisiteurConnec()
+        {
+            return laConnexion.fichefrais.Where(x => x.idVisiteur==leVisiteurConnect.idVisiteur).ToList();
+        }
+
+      
     }
 
-   /* public static list<FraisForfait> listeForfait() 
-    {
-        return laConnexion.FraisForfait.ToList();
-    }*/
+    
+
+
+
 
 }
 

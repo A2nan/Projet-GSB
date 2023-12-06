@@ -23,7 +23,7 @@ namespace Projet_GSB
             bsVisiteur.DataSource = ModeleM2.listeVisiteur();
             bsRapport.DataSource = ModeleM2.listeRapport();
             cboPraticien.ValueMember = "idMedecin";
-            cboPraticien.DisplayMember = "Nom";
+            cboPraticien.DisplayMember = "nom";
             cboPraticien.DataSource = bsMedecin;
             bsMedecin.DataSource = ModeleM2.listeMedecin();
         }
@@ -31,7 +31,8 @@ namespace Projet_GSB
         private void bsVisiteur_CurrentChanged(object sender, EventArgs e)
         {
             Visiteur leVisiteurChoisi = (Visiteur)bsVisiteur.Current;
-            textBox1.Text = leVisiteurChoisi.nom;
+            textBox7.Text = leVisiteurChoisi.nom.ToString();
+            textBox5.Text = leVisiteurChoisi.prenom.ToString();
         }
 
         private void checkBox1_CheckedChanged(object sender, EventArgs e)
@@ -51,11 +52,17 @@ namespace Projet_GSB
         private void bsMedecin_CurrentChanged(object sender, EventArgs e)
         {
             MEDECIN leMedecinChoisi = (MEDECIN)bsMedecin.Current;
+            bsMedecin.DataSource = leMedecinChoisi.nom.ToString();
         }
 
         private void ChangeDGV()
         {
            
+        }
+
+        private void cboPraticien_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

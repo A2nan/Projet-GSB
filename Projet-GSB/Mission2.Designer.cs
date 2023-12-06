@@ -246,6 +246,7 @@
             this.cboPraticien.Name = "cboPraticien";
             this.cboPraticien.Size = new System.Drawing.Size(121, 21);
             this.cboPraticien.TabIndex = 21;
+            this.cboPraticien.SelectedIndexChanged += new System.EventHandler(this.cboPraticien_SelectedIndexChanged);
             // 
             // bsMedecin
             // 

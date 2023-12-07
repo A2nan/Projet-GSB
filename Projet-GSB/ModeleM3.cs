@@ -28,7 +28,7 @@ namespace Projet_GSB
         }
         public static List<fichefrais> LesListeFraisDuVisiteurConnec()
         {
-            return laConnexion.fichefrais.Where(x => x.idVisiteur==leVisiteurConnect.idVisiteur).ToList();
+            return laConnexion.fichefrais.Where(x => x.idVisiteur==ModeleConnexion.UtilisateurConnecte.idVisiteur).ToList();
         }
 
        

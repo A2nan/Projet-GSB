@@ -34,19 +34,15 @@ namespace Projet_GSB
             DGVFiche.DataSource = BSFiche;
 
             DGVFiche.Columns[1].Visible = true;
-            DGVFiche.Columns[1].HeaderText = "Nom:";
+            DGVFiche.Columns[1].HeaderText = "Mois:";
             DGVFiche.Columns[2].Visible = true;
-            DGVFiche.Columns[2].HeaderText = "Prénom";
+            DGVFiche.Columns[2].HeaderText = "nbJusificatifs";
             DGVFiche.Columns[3].Visible = true;
-            DGVFiche.Columns[3].HeaderText = "Mois";
+            DGVFiche.Columns[3].HeaderText = "MotantValide";
             DGVFiche.Columns[4].Visible = true;
-            DGVFiche.Columns[4].HeaderText = "nombre de justificatifs";
+            DGVFiche.Columns[4].HeaderText = "DateModif";
             DGVFiche.Columns[5].Visible = true;
-            DGVFiche.Columns[5].HeaderText = "Motant Valide";
-            DGVFiche.Columns[6].Visible = true;
-            DGVFiche.Columns[6].HeaderText = "DateModif";
-            DGVFiche.Columns[7].Visible = true;
-            DGVFiche.Columns[7].HeaderText = "Etat";
+            DGVFiche.Columns[5].HeaderText = "idEtat";
         }
     }
 }

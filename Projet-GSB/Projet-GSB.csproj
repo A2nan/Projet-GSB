@@ -97,6 +97,12 @@
     <Compile Include="fichefrais.cs">
       <DependentUpon>EDMX.tt</DependentUpon>
     </Compile>
+    <Compile Include="FlisteVisiteurR.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FlisteVisiteurR.Designer.cs">
+      <DependentUpon>FlisteVisiteurR.cs</DependentUpon>
+    </Compile>
     <Compile Include="FMenu.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -108,6 +114,12 @@
     </Compile>
     <Compile Include="FmodifMdp.Designer.cs">
       <DependentUpon>FmodifMdp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FResponsable.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FResponsable.Designer.cs">
+      <DependentUpon>FResponsable.cs</DependentUpon>
     </Compile>
     <Compile Include="FrainsEngages.cs">
       <SubType>Form</SubType>
@@ -190,6 +202,9 @@
     <EmbeddedResource Include="FicheActuel.resx">
       <DependentUpon>FicheActuel.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FlisteVisiteurR.resx">
+      <DependentUpon>FlisteVisiteurR.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FMenu.resx">
       <DependentUpon>FMenu.cs</DependentUpon>
     </EmbeddedResource>
@@ -198,6 +213,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FrainsEngages.resx">
       <DependentUpon>FrainsEngages.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FResponsable.resx">
+      <DependentUpon>FResponsable.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Mission1.resx">
       <DependentUpon>Mission1.cs</DependentUpon>

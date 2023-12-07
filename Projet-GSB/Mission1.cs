@@ -25,7 +25,8 @@ namespace Projet_GSB
 
         private void consulterSesRésponsabilitéToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            
+            FResponsable fResponsable = new FResponsable();
+            fResponsable.Show();
         }
 
         private void modifierMdpToolStripMenuItem_Click(object sender, EventArgs e)
@@ -37,6 +38,12 @@ namespace Projet_GSB
         private void Mission1_Load(object sender, EventArgs e)
         {
 
+        }
+
+        private void parRégionToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FlisteVisiteurR flisteVisiteurR = new FlisteVisiteurR();
+            flisteVisiteurR.Show();
         }
     }
 }

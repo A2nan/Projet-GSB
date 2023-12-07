@@ -38,5 +38,10 @@ namespace Projet_GSB
             MessageBox.Show(message);
             this.Close();
         }
+
+        private void FmodifMdp_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

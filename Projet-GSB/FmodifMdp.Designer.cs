@@ -104,6 +104,7 @@
             // 
             this.mdpnew.Location = new System.Drawing.Point(377, 231);
             this.mdpnew.Name = "mdpnew";
+            this.mdpnew.PasswordChar = '*';
             this.mdpnew.Size = new System.Drawing.Size(192, 20);
             this.mdpnew.TabIndex = 6;
             // 
@@ -111,6 +112,7 @@
             // 
             this.currentmdp.Location = new System.Drawing.Point(377, 186);
             this.currentmdp.Name = "currentmdp";
+            this.currentmdp.PasswordChar = '*';
             this.currentmdp.Size = new System.Drawing.Size(192, 20);
             this.currentmdp.TabIndex = 7;
             this.currentmdp.TextChanged += new System.EventHandler(this.currentmdp_TextChanged);
@@ -119,6 +121,7 @@
             // 
             this.mdpverif.Location = new System.Drawing.Point(377, 269);
             this.mdpverif.Name = "mdpverif";
+            this.mdpverif.PasswordChar = '*';
             this.mdpverif.Size = new System.Drawing.Size(192, 20);
             this.mdpverif.TabIndex = 8;
             // 
@@ -126,6 +129,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.mdpverif);
             this.Controls.Add(this.currentmdp);
@@ -138,6 +142,7 @@
             this.Controls.Add(this.mdpcurrent);
             this.Name = "FmodifMdp";
             this.Text = "FmodifMdp";
+            this.Load += new System.EventHandler(this.FmodifMdp_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

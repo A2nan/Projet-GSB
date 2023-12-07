@@ -20,12 +20,13 @@ namespace Projet_GSB
 
         private void Mission2_Load(object sender, EventArgs e)
         {
-            bsVisiteur.DataSource = ModeleM2.listeVisiteur();
-            bsRapport.DataSource = ModeleM2.listeRapport();
-            cboPraticien.ValueMember = "idMedecin";
+
             cboPraticien.DisplayMember = "nom";
-            cboPraticien.DataSource = bsMedecin;
             bsMedecin.DataSource = ModeleM2.listeMedecin();
+            bsVisiteur.DataSource = ModeleM2.listeVisiteur();
+            cboPraticien.DataSource = bsMedecin;
+            bsRapport.DataSource = ModeleM2.listeRapport();
+            
         }
 
         private void bsVisiteur_CurrentChanged(object sender, EventArgs e)
@@ -49,16 +50,21 @@ namespace Projet_GSB
             }
         }
 
+        private void ChangeDGV()
+        {
+            
+        }
+
         private void bsMedecin_CurrentChanged(object sender, EventArgs e)
         {
             MEDECIN leMedecinChoisi = (MEDECIN)bsMedecin.Current;
-            bsMedecin.DataSource = leMedecinChoisi.nom.ToString();
+            List<RAPPORT> leRapportChoisi = leMedecinChoisi.RAPPORT.ToList();
+            bsRapport.DataSource = leRapportChoisi;
+            DgvRapport.DataSource = bsRapport;
+
         }
 
-        private void ChangeDGV()
-        {
-           
-        }
+     
 
         private void cboPraticien_SelectedIndexChanged(object sender, EventArgs e)
         {

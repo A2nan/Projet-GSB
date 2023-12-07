@@ -16,6 +16,10 @@ namespace Projet_GSB
         {
             InitializeComponent();
         }
+        private void AMrapport_Load(object sender, EventArgs e)
+        {
+            bsRapport.DataSource
+        }
 
         private void textBox3_TextChanged(object sender, EventArgs e)
         {
@@ -37,9 +41,6 @@ namespace Projet_GSB
 
         }
 
-        private void AMrapport_Load(object sender, EventArgs e)
-        {
-            
-        }
+   
     }
 }

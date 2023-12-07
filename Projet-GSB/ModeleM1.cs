@@ -23,6 +23,16 @@ namespace Projet_GSB
         {
             return laConnexion.Visiteur.ToList();
         }
+        
+        public static List<Region> listeRegion()
+        {
+            return laConnexion.Region.ToList();
+        }
+
+        public static List<Secteur> ListeSecteur()
+        {
+            return laConnexion.Secteur.ToList();
+        }
 
         public static bool modifInfo(string nom, string prenom, string ville, string rue, string cp, string dateEmbauche)
         {
@@ -57,7 +67,7 @@ namespace Projet_GSB
                 {
                     try
                     {
-                        string mdpHash = ModeleConnexion.GetMd5Hash(Newmdp);
+                        string mdpHash = string.Concat("0x", ModeleConnexion.GetMd5Hash(Newmdp));
                         ModeleConnexion.UtilisateurConnecte.password = mdpHash;
                         ModeleConnexion.laConnexion.SaveChanges();
                         message = "mot de passe modifié";

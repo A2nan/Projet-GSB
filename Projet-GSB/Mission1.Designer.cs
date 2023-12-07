@@ -34,6 +34,9 @@
             this.consulterSesRésponsabilitéToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.modifierMdpToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
+            this.afficherVisiteurToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.parRégionToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.parSecteurToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -42,7 +45,8 @@
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.consulterEtMàjInfoToolStripMenuItem,
             this.consulterSesRésponsabilitéToolStripMenuItem,
-            this.modifierMdpToolStripMenuItem});
+            this.modifierMdpToolStripMenuItem,
+            this.afficherVisiteurToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Size = new System.Drawing.Size(800, 24);
@@ -75,11 +79,33 @@
             this.contextMenuStrip1.Name = "contextMenuStrip1";
             this.contextMenuStrip1.Size = new System.Drawing.Size(61, 4);
             // 
+            // afficherVisiteurToolStripMenuItem
+            // 
+            this.afficherVisiteurToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.parRégionToolStripMenuItem,
+            this.parSecteurToolStripMenuItem});
+            this.afficherVisiteurToolStripMenuItem.Name = "afficherVisiteurToolStripMenuItem";
+            this.afficherVisiteurToolStripMenuItem.Size = new System.Drawing.Size(103, 20);
+            this.afficherVisiteurToolStripMenuItem.Text = "Afficher Visiteur";
+            // 
+            // parRégionToolStripMenuItem
+            // 
+            this.parRégionToolStripMenuItem.Name = "parRégionToolStripMenuItem";
+            this.parRégionToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.parRégionToolStripMenuItem.Text = "Par Région";
+            this.parRégionToolStripMenuItem.Click += new System.EventHandler(this.parRégionToolStripMenuItem_Click);
+            // 
+            // parSecteurToolStripMenuItem
+            // 
+            this.parSecteurToolStripMenuItem.Name = "parSecteurToolStripMenuItem";
+            this.parSecteurToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.parSecteurToolStripMenuItem.Text = "Par Secteur";
+            // 
             // Mission1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.SystemColors.Window;
+            this.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.menuStrip1);
             this.MainMenuStrip = this.menuStrip1;
@@ -100,6 +126,9 @@
         private System.Windows.Forms.ToolStripMenuItem consulterSesRésponsabilitéToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem modifierMdpToolStripMenuItem;
         private System.Windows.Forms.ContextMenuStrip contextMenuStrip1;
+        private System.Windows.Forms.ToolStripMenuItem afficherVisiteurToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem parRégionToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem parSecteurToolStripMenuItem;
     }
 }
 

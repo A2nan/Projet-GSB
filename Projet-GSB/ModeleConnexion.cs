@@ -30,8 +30,8 @@ namespace Projet_GSB
             bool vretour = false;
             if (Connexion == connexionValide)
             {
-                string mdpHash = GetMd5Hash(mdp);
-                if (string.Equals(mdpHash, utilisateurConnecte.password))
+                string mdpHash = string.Concat("0x", GetMd5Hash(mdp));
+                if (string.Equals(mdpHash, utilisateurConnecte.password, StringComparison.CurrentCultureIgnoreCase))
                 {
                     vretour = true;
                 }
@@ -86,7 +86,6 @@ namespace Projet_GSB
                 }
                 
             }
-
 
             return message;
         }

@@ -31,7 +31,7 @@ namespace Projet_GSB
             return laConnexion.fichefrais.Where(x => x.idVisiteur==leVisiteurConnect.idVisiteur).ToList();
         }
 
-      
+       
     }
 
     

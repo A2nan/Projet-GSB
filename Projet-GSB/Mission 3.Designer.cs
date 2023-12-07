@@ -60,9 +60,9 @@
             // DGVFiche
             // 
             this.DGVFiche.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.DGVFiche.Location = new System.Drawing.Point(11, 12);
+            this.DGVFiche.Location = new System.Drawing.Point(12, 12);
             this.DGVFiche.Name = "DGVFiche";
-            this.DGVFiche.Size = new System.Drawing.Size(800, 385);
+            this.DGVFiche.Size = new System.Drawing.Size(777, 363);
             this.DGVFiche.TabIndex = 2;
             this.DGVFiche.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.DGVFiche_CellContentClick);
             // 
@@ -86,6 +86,7 @@
             this.Controls.Add(this.button1);
             this.Name = "Mission3";
             this.Text = " Mission 3";
+            this.Load += new System.EventHandler(this.Mission3_Load);
             ((System.ComponentModel.ISupportInitialize)(this.DGVFiche)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.BSFiche)).EndInit();
             this.ResumeLayout(false);

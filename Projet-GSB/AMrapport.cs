@@ -18,7 +18,12 @@ namespace Projet_GSB
         }
         private void AMrapport_Load(object sender, EventArgs e)
         {
-            bsRapport.DataSource
+           if(ModeleM2.Action == 2)
+            {
+                textBox1.Text = ModeleM2.RapportChoisi1.idRapport.ToString();
+                textBox2.Text = ((DateTime)ModeleM2.RapportChoisi1.dateRapport).Date.ToString("dd/MM/yyyy");
+                textBox3.Text = ModeleM2.RapportChoisi1.idMotif.ToString();
+            }
         }
 
         private void textBox3_TextChanged(object sender, EventArgs e)
@@ -41,6 +46,10 @@ namespace Projet_GSB
 
         }
 
-   
+        private void bsRapport_CurrentChanged(object sender, EventArgs e)
+        {
+            RAPPORT leRapportChoisi = (RAPPORT)bsRapport.Current;
+            textBox1.Text = leRapportChoisi.idRapport.ToString();
+        }
     }
 }

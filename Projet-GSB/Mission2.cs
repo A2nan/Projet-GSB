@@ -31,9 +31,14 @@ namespace Projet_GSB
 
         private void bsVisiteur_CurrentChanged(object sender, EventArgs e)
         {
-            Visiteur leVisiteurChoisi = (Visiteur)bsVisiteur.Current;
-            textBox7.Text = leVisiteurChoisi.nom.ToString();
-            textBox5.Text = leVisiteurChoisi.prenom.ToString();
+            if(ModeleM2.Action == 2)
+            {
+                Visiteur leVisiteurChoisi = (Visiteur)bsVisiteur.Current;
+
+                textBox7.Text = leVisiteurChoisi.nom.ToString();
+                textBox5.Text = leVisiteurChoisi.prenom.ToString();
+            }
+          
         }
 
         private void checkBox1_CheckedChanged(object sender, EventArgs e)
@@ -69,6 +74,23 @@ namespace Projet_GSB
         private void cboPraticien_SelectedIndexChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            ModeleM2.Action = 2;
+            System.Type type = bsRapport.Current.GetType();
+            int id = (int)type.GetProperty("idRapport").GetValue(bsRapport.Current, null);
+            ModeleM2.RapportChoisi1 = ModeleM2.recupRapport(id);
+            AMrapport aMrapport = new AMrapport();
+            aMrapport.Show();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            ModeleM2.Action = 1;
+            AMrapport aMrapport = new AMrapport();
+            aMrapport.Show();
         }
     }
 }

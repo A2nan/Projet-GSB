@@ -247,6 +247,10 @@
             this.label8.TabIndex = 21;
             this.label8.Text = "OFFRE ECHANTILLION(S)";
             // 
+            // bsRapport
+            // 
+            this.bsRapport.CurrentChanged += new System.EventHandler(this.bsRapport_CurrentChanged);
+            // 
             // AMrapport
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);

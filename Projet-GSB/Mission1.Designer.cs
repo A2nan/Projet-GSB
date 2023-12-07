@@ -35,8 +35,6 @@
             this.modifierMdpToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.afficherVisiteurToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.parRégionToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.parSecteurToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -81,25 +79,10 @@
             // 
             // afficherVisiteurToolStripMenuItem
             // 
-            this.afficherVisiteurToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.parRégionToolStripMenuItem,
-            this.parSecteurToolStripMenuItem});
             this.afficherVisiteurToolStripMenuItem.Name = "afficherVisiteurToolStripMenuItem";
             this.afficherVisiteurToolStripMenuItem.Size = new System.Drawing.Size(103, 20);
             this.afficherVisiteurToolStripMenuItem.Text = "Afficher Visiteur";
-            // 
-            // parRégionToolStripMenuItem
-            // 
-            this.parRégionToolStripMenuItem.Name = "parRégionToolStripMenuItem";
-            this.parRégionToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.parRégionToolStripMenuItem.Text = "Par Région";
-            this.parRégionToolStripMenuItem.Click += new System.EventHandler(this.parRégionToolStripMenuItem_Click);
-            // 
-            // parSecteurToolStripMenuItem
-            // 
-            this.parSecteurToolStripMenuItem.Name = "parSecteurToolStripMenuItem";
-            this.parSecteurToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.parSecteurToolStripMenuItem.Text = "Par Secteur";
+            this.afficherVisiteurToolStripMenuItem.Click += new System.EventHandler(this.afficherVisiteurToolStripMenuItem_Click);
             // 
             // Mission1
             // 
@@ -127,8 +110,6 @@
         private System.Windows.Forms.ToolStripMenuItem modifierMdpToolStripMenuItem;
         private System.Windows.Forms.ContextMenuStrip contextMenuStrip1;
         private System.Windows.Forms.ToolStripMenuItem afficherVisiteurToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem parRégionToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem parSecteurToolStripMenuItem;
     }
 }
 

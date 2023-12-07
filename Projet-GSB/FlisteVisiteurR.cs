@@ -23,6 +23,7 @@ namespace Projet_GSB
             Region laRegionChoisie = (Region)bsRegion.Current;
             bsVisiteur.DataSource = laRegionChoisie.Visiteur1.Select(x => new { x.nom, x.prenom, x.rue, x.cp, x.ville, x.dateEmbauche });
             dgvVisiteur.DataSource = bsVisiteur;
+            txtRegion.Text = ((Region)bsRegion.Current).Visiteur.nom.Trim().ToString() + " " + ((Region)bsRegion.Current).Visiteur.prenom.Trim().ToString();
         }
 
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
@@ -39,6 +40,14 @@ namespace Projet_GSB
             cboSecteur.DisplayMember = "libSecteur";
             bsSecteur.DataSource = ModeleM1.ListeSecteur();
             cboSecteur.DataSource = bsSecteur;
+        }
+
+        private void bsSecteur_CurrentChanged(object sender, EventArgs e)
+        {
+            bsRegion.DataSource = ((Secteur)bsSecteur.Current).Region.ToList();
+            cboRegion.DisplayMember = "libRegion"; 
+            cboRegion.DataSource = bsRegion;
+            txtSecteur.Text = ((Secteur)bsSecteur.Current).Visiteur.nom.Trim().ToString() + " " + ((Secteur)bsSecteur.Current).Visiteur.prenom.Trim().ToString();
         }
     }
 }

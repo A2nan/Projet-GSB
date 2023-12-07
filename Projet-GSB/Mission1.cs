@@ -40,7 +40,7 @@ namespace Projet_GSB
 
         }
 
-        private void parRégionToolStripMenuItem_Click(object sender, EventArgs e)
+        private void afficherVisiteurToolStripMenuItem_Click(object sender, EventArgs e)
         {
             FlisteVisiteurR flisteVisiteurR = new FlisteVisiteurR();
             flisteVisiteurR.Show();

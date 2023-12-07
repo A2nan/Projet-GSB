@@ -82,6 +82,12 @@
     <Compile Include="FConnection.Designer.cs">
       <DependentUpon>FConnection.cs</DependentUpon>
     </Compile>
+    <Compile Include="FConsultInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FConsultInfo.Designer.cs">
+      <DependentUpon>FConsultInfo.cs</DependentUpon>
+    </Compile>
     <Compile Include="FicheActuel.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -96,6 +102,12 @@
     </Compile>
     <Compile Include="FMenu.Designer.cs">
       <DependentUpon>FMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FmodifMdp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FmodifMdp.Designer.cs">
+      <DependentUpon>FmodifMdp.cs</DependentUpon>
     </Compile>
     <Compile Include="FrainsEngages.cs">
       <SubType>Form</SubType>
@@ -172,11 +184,17 @@
     <EmbeddedResource Include="FConnection.resx">
       <DependentUpon>FConnection.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FConsultInfo.resx">
+      <DependentUpon>FConsultInfo.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FicheActuel.resx">
       <DependentUpon>FicheActuel.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FMenu.resx">
       <DependentUpon>FMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FmodifMdp.resx">
+      <DependentUpon>FmodifMdp.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrainsEngages.resx">
       <DependentUpon>FrainsEngages.cs</DependentUpon>

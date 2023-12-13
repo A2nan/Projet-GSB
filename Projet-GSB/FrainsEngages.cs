@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Projet_GSB
 {
-    public partial class FrainsEngages : Form
+    public partial class FFrainsEngages : Form
     {
-        public FrainsEngages()
+        public FFrainsEngages()
         {
             InitializeComponent();
         }
@@ -22,19 +22,7 @@ namespace Projet_GSB
 
         }
 
-        private void button1_Click(object sender, EventArgs e)
-        {
-            MessageBox.Show("Vous information on était sauvégardé !");
-            
-
-        }
-
-        private void button2_Click(object sender, EventArgs e)
-        {
-            MessageBox.Show("Etez vous sur de vouloir annulé ?");
-            
-        }
-
+        
 
         private void textBox2_TextChanged(object sender, EventArgs e)
         {
@@ -59,6 +47,22 @@ namespace Projet_GSB
             
 
 
+        }
+
+        private void DGVFrainsEngages_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void FFrainsEngagesrainsEngages_Load(object sender, EventArgs e)      
+        {
+
+            
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Close();
         }
     }
 }

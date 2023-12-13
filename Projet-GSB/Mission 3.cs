@@ -19,7 +19,7 @@ namespace Projet_GSB
 
         private void button1_Click(object sender, EventArgs e)
         {
-            FrainsEngages fEngages = new FrainsEngages();
+            FFrainsEngages fEngages = new FFrainsEngages();
             fEngages.Show();
         }
 
@@ -44,5 +44,27 @@ namespace Projet_GSB
             DGVFiche.Columns[5].Visible = true;
             DGVFiche.Columns[5].HeaderText = "idEtat";
         }
+
+
+        private void FrainsEngages_Load(object sender, EventArgs e) 
+        {
+            
+
+        }
+
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            Modif Fmodif = new Modif();
+            Fmodif.Show();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            consult Fconsult = new consult();
+            Fconsult.Show();
+        }
+
+        
     }
 }

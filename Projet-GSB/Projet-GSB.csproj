@@ -55,6 +55,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="consult.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="consult.Designer.cs">
+      <DependentUpon>consult.cs</DependentUpon>
+    </Compile>
     <Compile Include="EDMX.Context.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -167,6 +173,12 @@
     <Compile Include="ModeleM1.cs" />
     <Compile Include="ModeleM2.cs" />
     <Compile Include="ModeleM3.cs" />
+    <Compile Include="Modifi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Modifi.Designer.cs">
+      <DependentUpon>Modifi.cs</DependentUpon>
+    </Compile>
     <Compile Include="MOTIF.cs">
       <DependentUpon>EDMX.tt</DependentUpon>
     </Compile>
@@ -193,6 +205,9 @@
     <Compile Include="Visiteur.cs">
       <DependentUpon>EDMX.tt</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="consult.resx">
+      <DependentUpon>consult.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FConnection.resx">
       <DependentUpon>FConnection.cs</DependentUpon>
     </EmbeddedResource>
@@ -225,6 +240,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Mission2.resx">
       <DependentUpon>Mission2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modifi.resx">
+      <DependentUpon>Modifi.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

@@ -4,7 +4,7 @@
   <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
     <!-- Diagram content (shape and connector positions) -->
     <edmx:Diagrams>
-      <Diagram DiagramId="632dbd33e0974578a7f0af2e22a15680" Name="Diagram1" ZoomLevel="104">
+      <Diagram DiagramId="632dbd33e0974578a7f0af2e22a15680" Name="Diagram1" ZoomLevel="85">
         <EntityTypeShape EntityType="NerdsUnitedModel.Etat" Width="1.5" PointX="3" PointY="4.5" IsExpanded="true" />
         <EntityTypeShape EntityType="NerdsUnitedModel.FAMILLE" Width="1.5" PointX="6" PointY="22.5" IsExpanded="true" />
         <EntityTypeShape EntityType="NerdsUnitedModel.fichefrais" Width="1.5" PointX="5.25" PointY="7.875" IsExpanded="true" />

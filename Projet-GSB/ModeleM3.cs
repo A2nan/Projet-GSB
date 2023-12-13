@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Projet_GSB;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -31,13 +32,17 @@ namespace Projet_GSB
             return laConnexion.fichefrais.Where(x => x.idVisiteur==ModeleConnexion.UtilisateurConnecte.idVisiteur).ToList();
         }
 
-       
+        public static List<FraisForfait> LesFicheEngagesDuVisiteurConnec() 
+        {
+            return laConnexion.FraisForfait.Where(x => x.id == ModeleConnexion.UtilisateurConnecte.idVisiteur).ToList();
+        }
     }
 
-    
+
 
 
 
 
 }
+
 

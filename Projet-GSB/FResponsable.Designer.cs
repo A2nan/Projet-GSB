@@ -36,6 +36,8 @@
             this.label2 = new System.Windows.Forms.Label();
             this.dgvRegion1 = new System.Windows.Forms.DataGridView();
             this.bsRegion1 = new System.Windows.Forms.BindingSource(this.components);
+            this.Nom = new System.Windows.Forms.Label();
+            this.txtboxnom = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.dgvRegion)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bsRegion)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvRegion1)).BeginInit();
@@ -95,12 +97,31 @@
             this.dgvRegion1.Size = new System.Drawing.Size(241, 217);
             this.dgvRegion1.TabIndex = 4;
             // 
+            // Nom
+            // 
+            this.Nom.AutoSize = true;
+            this.Nom.Location = new System.Drawing.Point(302, 80);
+            this.Nom.Name = "Nom";
+            this.Nom.Size = new System.Drawing.Size(61, 13);
+            this.Nom.TabIndex = 5;
+            this.Nom.Text = "Votre nom :";
+            this.Nom.Click += new System.EventHandler(this.label3_Click);
+            // 
+            // txtboxnom
+            // 
+            this.txtboxnom.Location = new System.Drawing.Point(369, 77);
+            this.txtboxnom.Name = "txtboxnom";
+            this.txtboxnom.Size = new System.Drawing.Size(100, 20);
+            this.txtboxnom.TabIndex = 6;
+            // 
             // FResponsable
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.txtboxnom);
+            this.Controls.Add(this.Nom);
             this.Controls.Add(this.dgvRegion1);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
@@ -127,5 +148,7 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.DataGridView dgvRegion1;
         private System.Windows.Forms.BindingSource bsRegion1;
+        private System.Windows.Forms.Label Nom;
+        private System.Windows.Forms.TextBox txtboxnom;
     }
 }

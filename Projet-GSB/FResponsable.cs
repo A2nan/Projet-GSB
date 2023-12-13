@@ -34,10 +34,15 @@ namespace Projet_GSB
                 dgvRegion1.Columns[i].Visible = false;
             }
             dgvRegion1.Columns[1].Visible = true;
-            
+            txtboxnom.Text = ModeleConnexion.UtilisateurConnecte.nom.Trim().ToString() + " " + ModeleConnexion.UtilisateurConnecte.prenom.Trim().ToString();
         }
 
         private void dgvRegion_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void label3_Click(object sender, EventArgs e)
         {
 
         }

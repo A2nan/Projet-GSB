@@ -45,5 +45,11 @@ namespace Projet_GSB
             FlisteVisiteurR flisteVisiteurR = new FlisteVisiteurR();
             flisteVisiteurR.Show();
         }
+
+        private void créationCompteToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FCreatCompte fCreatCompte = new FCreatCompte(); 
+            fCreatCompte.Show();
+        }
     }
 }

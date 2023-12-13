@@ -33,8 +33,9 @@
             this.consulterEtMàjInfoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.consulterSesRésponsabilitéToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.modifierMdpToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.afficherVisiteurToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
+            this.créationCompteToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -44,7 +45,8 @@
             this.consulterEtMàjInfoToolStripMenuItem,
             this.consulterSesRésponsabilitéToolStripMenuItem,
             this.modifierMdpToolStripMenuItem,
-            this.afficherVisiteurToolStripMenuItem});
+            this.afficherVisiteurToolStripMenuItem,
+            this.créationCompteToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Size = new System.Drawing.Size(800, 24);
@@ -72,17 +74,24 @@
             this.modifierMdpToolStripMenuItem.Text = "Modifier votre mot de passe";
             this.modifierMdpToolStripMenuItem.Click += new System.EventHandler(this.modifierMdpToolStripMenuItem_Click);
             // 
-            // contextMenuStrip1
-            // 
-            this.contextMenuStrip1.Name = "contextMenuStrip1";
-            this.contextMenuStrip1.Size = new System.Drawing.Size(61, 4);
-            // 
             // afficherVisiteurToolStripMenuItem
             // 
             this.afficherVisiteurToolStripMenuItem.Name = "afficherVisiteurToolStripMenuItem";
             this.afficherVisiteurToolStripMenuItem.Size = new System.Drawing.Size(103, 20);
             this.afficherVisiteurToolStripMenuItem.Text = "Afficher Visiteur";
             this.afficherVisiteurToolStripMenuItem.Click += new System.EventHandler(this.afficherVisiteurToolStripMenuItem_Click);
+            // 
+            // contextMenuStrip1
+            // 
+            this.contextMenuStrip1.Name = "contextMenuStrip1";
+            this.contextMenuStrip1.Size = new System.Drawing.Size(61, 4);
+            // 
+            // créationCompteToolStripMenuItem
+            // 
+            this.créationCompteToolStripMenuItem.Name = "créationCompteToolStripMenuItem";
+            this.créationCompteToolStripMenuItem.Size = new System.Drawing.Size(108, 20);
+            this.créationCompteToolStripMenuItem.Text = "Création compte";
+            this.créationCompteToolStripMenuItem.Click += new System.EventHandler(this.créationCompteToolStripMenuItem_Click);
             // 
             // Mission1
             // 
@@ -110,6 +119,7 @@
         private System.Windows.Forms.ToolStripMenuItem modifierMdpToolStripMenuItem;
         private System.Windows.Forms.ContextMenuStrip contextMenuStrip1;
         private System.Windows.Forms.ToolStripMenuItem afficherVisiteurToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem créationCompteToolStripMenuItem;
     }
 }
 

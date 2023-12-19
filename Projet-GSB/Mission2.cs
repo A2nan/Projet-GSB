@@ -31,13 +31,12 @@ namespace Projet_GSB
 
         private void bsVisiteur_CurrentChanged(object sender, EventArgs e)
         {
-            if(ModeleM2.Action == 2)
-            {
-                Visiteur leVisiteurChoisi = (Visiteur)bsVisiteur.Current;
+            
+            Visiteur leVisiteurChoisi = (Visiteur)bsVisiteur.Current;
 
-                textBox7.Text = leVisiteurChoisi.nom.ToString();
-                textBox5.Text = leVisiteurChoisi.prenom.ToString();
-            }
+            textBox7.Text = leVisiteurChoisi.nom.ToString();
+            textBox5.Text = leVisiteurChoisi.prenom.ToString();
+            
           
         }
 
@@ -46,7 +45,7 @@ namespace Projet_GSB
             if (checkBox1.Checked)
             {
                 checkBox2.Enabled = true;
-                checkBox3.Enabled = true;  
+                checkBox3.Enabled = true;
             }
             else
             {

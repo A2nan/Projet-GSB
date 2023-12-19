@@ -20,10 +20,17 @@ namespace Projet_GSB
         {
            if(ModeleM2.Action == 2)
             {
+                bsMotif.DataSource = ModeleM2.listeMotif();
+                cboMotif.DisplayMember = "libMotif";
+                cboMotif.DataSource = bsMotif;
                 textBox1.Text = ModeleM2.RapportChoisi1.idRapport.ToString();
                 textBox2.Text = ((DateTime)ModeleM2.RapportChoisi1.dateRapport).Date.ToString("dd/MM/yyyy");
-                textBox3.Text = ModeleM2.RapportChoisi1.idMotif.ToString();
+                textBox3.Text = ModeleM2.RapportChoisi1.bilan.ToString();
+                bsMedicament.DataSource = ModeleM2.listeMedicaments();
+                dgvEchantillion.DataSource = bsMedicament;
+                
             }
+
         }
 
         private void textBox3_TextChanged(object sender, EventArgs e)
@@ -50,6 +57,13 @@ namespace Projet_GSB
         {
             RAPPORT leRapportChoisi = (RAPPORT)bsRapport.Current;
             textBox1.Text = leRapportChoisi.idRapport.ToString();
+          
+        }
+
+        private void bsMotif_CurrentChanged(object sender, EventArgs e)
+        {
+            MOTIF leMotifChoisi = (MOTIF)bsMotif.Current;
+            
         }
     }
 }

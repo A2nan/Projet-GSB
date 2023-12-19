@@ -16,8 +16,9 @@ namespace Projet_GSB
         private static RAPPORT RapportChoisi;
        
         
-        public static int Action { get => action; set => action = value; }
+       
         public static RAPPORT RapportChoisi1 { get => RapportChoisi; set => RapportChoisi = value; }
+        public static int Action { get => action; set => action = value; }
 
         public static void init()
         {
@@ -50,7 +51,17 @@ namespace Projet_GSB
         
         public static List<OFFRIR> listeOFFRIR()
         {
-            return laConnexion .OFFRIR.ToList();
+            return laConnexion.OFFRIR.ToList();
+        }
+
+        public static List<MOTIF> listeMotif()
+        {
+            return laConnexion.MOTIF.ToList();
+        }
+
+        public static List<MEDICAMENT> listeMedicaments()
+        {
+            return laConnexion.MEDICAMENT.ToList();
         }
         public static void chargeVisiteurConnect(string lid)
         {

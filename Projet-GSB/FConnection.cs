@@ -15,7 +15,8 @@ namespace Projet_GSB
         public FConnection()
         {
             InitializeComponent();
-            
+            this.AcceptButton = connexion;
+
 
         }
 
@@ -23,6 +24,8 @@ namespace Projet_GSB
         public static void ThreadProc()
         {
             Application.Run(new FMenu());
+            SendKeys.SendWait("{ENTER}");
+            
         }
 
         private void label1_Click(object sender, EventArgs e)

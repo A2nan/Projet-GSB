@@ -33,6 +33,7 @@ namespace Projet_GSB
 
         private void FlisteVisiteurR_Load(object sender, EventArgs e)
         {
+            
             cboRegion.DisplayMember = "libRegion";
             bsRegion.DataSource = ModeleM1.listeRegion();
             cboRegion.DataSource = bsRegion;

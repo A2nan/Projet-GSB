@@ -45,6 +45,8 @@
             this.label1 = new System.Windows.Forms.Label();
             this.Annuler = new System.Windows.Forms.Button();
             this.Créer = new System.Windows.Forms.Button();
+            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.label2 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // textBox1
@@ -52,9 +54,9 @@
             this.textBox1.BackColor = System.Drawing.Color.Fuchsia;
             this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Bold);
             this.textBox1.ForeColor = System.Drawing.SystemColors.Window;
-            this.textBox1.Location = new System.Drawing.Point(82, 24);
+            this.textBox1.Location = new System.Drawing.Point(108, 24);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(615, 38);
+            this.textBox1.Size = new System.Drawing.Size(589, 38);
             this.textBox1.TabIndex = 0;
             this.textBox1.Text = "CREATION DU COMPTE VISITEUR";
             this.textBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -190,11 +192,31 @@
             this.Créer.Text = "Créer";
             this.Créer.UseVisualStyleBackColor = true;
             // 
+            // textBox2
+            // 
+            this.textBox2.Location = new System.Drawing.Point(381, 82);
+            this.textBox2.Name = "textBox2";
+            this.textBox2.Size = new System.Drawing.Size(100, 20);
+            this.textBox2.TabIndex = 31;
+            this.textBox2.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(276, 85);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(32, 13);
+            this.label2.TabIndex = 30;
+            this.label2.Text = "NOM";
+            this.label2.Click += new System.EventHandler(this.label2_Click);
+            // 
             // FCreatCompte
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(799, 450);
+            this.Controls.Add(this.textBox2);
+            this.Controls.Add(this.label2);
             this.Controls.Add(this.Créer);
             this.Controls.Add(this.Annuler);
             this.Controls.Add(this.label1);
@@ -238,5 +260,7 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button Annuler;
         private System.Windows.Forms.Button Créer;
+        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.Label label2;
     }
 }

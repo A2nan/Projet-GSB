@@ -10,21 +10,11 @@ using System.Windows.Forms;
 
 namespace Projet_GSB
 {
-    public partial class FCreatCompte : Form
+    public partial class FActif : Form
     {
-        public FCreatCompte()
+        public FActif()
         {
             InitializeComponent();
-        }
-
-        private void label2_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox2_TextChanged(object sender, EventArgs e)
-        {
-
         }
     }
 }

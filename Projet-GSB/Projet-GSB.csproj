@@ -73,6 +73,12 @@
     <Compile Include="Etat.cs">
       <DependentUpon>EDMX.tt</DependentUpon>
     </Compile>
+    <Compile Include="FActif.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FActif.Designer.cs">
+      <DependentUpon>FActif.cs</DependentUpon>
+    </Compile>
     <Compile Include="FAMILLE.cs">
       <DependentUpon>EDMX.tt</DependentUpon>
     </Compile>
@@ -187,6 +193,9 @@
     <Compile Include="Visiteur.cs">
       <DependentUpon>EDMX.tt</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="FActif.resx">
+      <DependentUpon>FActif.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FConnection.resx">
       <DependentUpon>FConnection.cs</DependentUpon>
     </EmbeddedResource>

@@ -81,8 +81,16 @@ namespace Projet_GSB
                     else
                     {
                         message = "erreur : utlisateur innexistant ou mot de passe incorrect";
+                        utilisateurConnecte.tentatives_echouees++;
                         connexionValide = false;
                     }
+                    if (utilisateurConnecte.tentatives_echouees >= 3)
+                    {
+                        utilisateurConnecte.compte_actif = false; // Désactiver le compte
+                        message = "vous avez 3 tentatives échouées, contactez votre responsable";
+                        connexionValide = false;
+                    }
+                    laConnexion.SaveChanges();
                 }
                 
             }

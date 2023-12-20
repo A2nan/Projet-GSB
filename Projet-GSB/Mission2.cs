@@ -26,7 +26,7 @@ namespace Projet_GSB
             bsVisiteur.DataSource = ModeleM2.listeVisiteur();
             cboPraticien.DataSource = bsMedecin;
             bsRapport.DataSource = ModeleM2.listeRapport();
-            
+            DgvRapport.AutoGenerateColumns = false;
         }
 
         private void bsVisiteur_CurrentChanged(object sender, EventArgs e)
@@ -36,8 +36,9 @@ namespace Projet_GSB
 
             textBox7.Text = leVisiteurChoisi.nom.ToString();
             textBox5.Text = leVisiteurChoisi.prenom.ToString();
-            
-          
+            textBox6.Text = $"{leVisiteurChoisi.rue.ToString()}, {leVisiteurChoisi.ville.ToString()}";
+            textBox3.Text = leVisiteurChoisi.dateEmbauche.ToString();
+            textBox4.Text = leVisiteurChoisi.idVisiteur.ToString();
         }
 
         private void checkBox1_CheckedChanged(object sender, EventArgs e)
@@ -61,10 +62,7 @@ namespace Projet_GSB
 
         private void bsMedecin_CurrentChanged(object sender, EventArgs e)
         {
-            MEDECIN leMedecinChoisi = (MEDECIN)bsMedecin.Current;
-            List<RAPPORT> leRapportChoisi = leMedecinChoisi.RAPPORT.ToList();
-            bsRapport.DataSource = leRapportChoisi;
-            DgvRapport.DataSource = bsRapport;
+            cboPraticien_SelectedIndexChanged(sender, e);
 
         }
 
@@ -72,7 +70,19 @@ namespace Projet_GSB
 
         private void cboPraticien_SelectedIndexChanged(object sender, EventArgs e)
         {
+            if (cboPraticien.SelectedItem != null)
+            {
+                MEDECIN leMedecinChoisi = (MEDECIN)cboPraticien.SelectedItem;
 
+                // Obtenez la liste des rapports associés au médecin choisi
+                List<RAPPORT> leRapportChoisi = leMedecinChoisi.RAPPORT.ToList();
+
+                // Mettez à jour la source de données du BindingSource des rapports
+                bsRapport.DataSource = leRapportChoisi;
+
+                // Mettez à jour la source de données du DataGridView
+                DgvRapport.DataSource = bsRapport;
+            }
         }
 
         private void button2_Click(object sender, EventArgs e)

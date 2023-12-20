@@ -63,6 +63,11 @@ namespace Projet_GSB
         {
             return laConnexion.MEDICAMENT.ToList();
         }
+
+        public static List<OFFRIR> listeOffrir()
+        {
+            return laConnexion.OFFRIR.ToList();
+        }
         public static void chargeVisiteurConnect(string lid)
         {
             leVisiteurConnect = laConnexion.Visiteur.Where(x => x.idVisiteur == lid).ToList()[0];

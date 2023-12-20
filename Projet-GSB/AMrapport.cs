@@ -33,6 +33,7 @@ namespace Projet_GSB
 
         }
 
+
         private void textBox3_TextChanged(object sender, EventArgs e)
         {
 
@@ -57,7 +58,8 @@ namespace Projet_GSB
         {
             RAPPORT leRapportChoisi = (RAPPORT)bsRapport.Current;
             textBox1.Text = leRapportChoisi.idRapport.ToString();
-          
+            ChargerEchantillonsPresentes(leRapportChoisi);
+
         }
 
         private void bsMotif_CurrentChanged(object sender, EventArgs e)

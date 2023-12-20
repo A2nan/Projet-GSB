@@ -73,14 +73,8 @@ namespace Projet_GSB
             if (cboPraticien.SelectedItem != null)
             {
                 MEDECIN leMedecinChoisi = (MEDECIN)cboPraticien.SelectedItem;
-
-                // Obtenez la liste des rapports associés au médecin choisi
                 List<RAPPORT> leRapportChoisi = leMedecinChoisi.RAPPORT.ToList();
-
-                // Mettez à jour la source de données du BindingSource des rapports
                 bsRapport.DataSource = leRapportChoisi;
-
-                // Mettez à jour la source de données du DataGridView
                 DgvRapport.DataSource = bsRapport;
             }
         }

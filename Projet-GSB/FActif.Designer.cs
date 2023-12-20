@@ -38,12 +38,12 @@
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.bsSecteur = new System.Windows.Forms.BindingSource(this.components);
             this.bsVisiteur = new System.Windows.Forms.BindingSource(this.components);
-            this.z = new System.Windows.Forms.BindingSource(this.components);
+            this.bsRegion = new System.Windows.Forms.BindingSource(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bsSecteur)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bsVisiteur)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.z)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bsRegion)).BeginInit();
             this.SuspendLayout();
             // 
             // dataGridView1
@@ -134,7 +134,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.bsSecteur)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.bsVisiteur)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.z)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bsRegion)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -151,6 +151,6 @@
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.BindingSource bsSecteur;
         private System.Windows.Forms.BindingSource bsVisiteur;
-        private System.Windows.Forms.BindingSource z;
+        private System.Windows.Forms.BindingSource bsRegion;
     }
 }

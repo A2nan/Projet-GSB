@@ -23,7 +23,7 @@ namespace Projet_GSB
         {
             return laConnexion.Visiteur.ToList();
         }
-        
+
         public static List<Region> listeRegion()
         {
             return laConnexion.Region.ToList();
@@ -71,9 +71,9 @@ namespace Projet_GSB
                         ModeleConnexion.UtilisateurConnecte.password = mdpHash;
                         ModeleConnexion.laConnexion.SaveChanges();
                         message = "mot de passe modifié";
-                        
+
                     }
-                    catch(Exception ex)
+                    catch (Exception ex)
                     {
                         message = "Une erreur est survenu, votre mdp n'a pas été modifier";
                     }
@@ -88,7 +88,7 @@ namespace Projet_GSB
 
         }
 
-    }
+    }   
+}
 
-}   
 

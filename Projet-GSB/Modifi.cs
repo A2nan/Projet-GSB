@@ -16,6 +16,9 @@ namespace Projet_GSB
         {
             InitializeComponent();
         }
+        
+
+       
 
         private void Modif_Load(object sender, EventArgs e)
         {
@@ -28,5 +31,34 @@ namespace Projet_GSB
             this.Close();
             
         }
+
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Vos modification on bien était modifié");
+            this.Close();
+        }
+
+        private void Modifi_load(object sender, EventArgs e)
+        {
+            BSModif.DataSource = ModeleM3.LesListeFraisDuVisiteurConnec();
+            DGVModif.DataSource = BSModif;
+            
+            DGVModif.Columns[1].Visible = true;
+            DGVModif.Columns[1].HeaderText = "Mois:";
+            DGVModif.Columns[2].Visible = true;
+            DGVModif.Columns[2].HeaderText = "nbJusificatifs";
+            DGVModif.Columns[3].Visible = true;
+            DGVModif.Columns[3].HeaderText = "MotantValide";
+            DGVModif.Columns[4].Visible = true;
+            DGVModif.Columns[4].HeaderText = "DateModif";
+            DGVModif.Columns[5].Visible = true;
+            DGVModif.Columns[5].HeaderText = "idEtat";
+        }
+
     }
 }

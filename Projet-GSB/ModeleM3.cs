@@ -11,7 +11,7 @@ namespace Projet_GSB
     {
         private static NerdsUnitedEntities laConnexion;
         private static Visiteur leVisiteurConnect;
-        
+        //trigger si il y a plus de 40 km dans le mois dans c'est frais on réfus les frais 
         
         public static void init()
         {
@@ -36,6 +36,40 @@ namespace Projet_GSB
         {
             return laConnexion.FraisForfait.Where(x => x.id == ModeleConnexion.UtilisateurConnecte.idVisiteur).ToList();
         }
+
+        public static bool ModificationFiche(string mois, int nbJustificatifs, string montantValide, DateTime dateModif)
+        {
+            bool vretour = true;
+            try
+            {
+               
+                var ficheAModifier = ModeleM3.LesListeFraisDuVisiteurConnec()
+                    .FirstOrDefault(fiche => fiche.idVisiteur == ModeleConnexion.UtilisateurConnecte.idVisiteur);
+
+                if (ficheAModifier != null)
+                {
+                    
+                    ficheAModifier.mois = mois;
+                    ficheAModifier.nbJustificatifs = nbJustificatifs;
+                    ficheAModifier.dateModif = dateModif;
+                }
+                else
+                {
+                    
+                    vretour = false;
+                }
+            }
+            catch (Exception ex)
+            {
+               
+                vretour = false;
+            }
+            return vretour;
+        }
+
+
+        
+
     }
 
 

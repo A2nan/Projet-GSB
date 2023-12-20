@@ -58,7 +58,7 @@ namespace Projet_GSB
         {
             RAPPORT leRapportChoisi = (RAPPORT)bsRapport.Current;
             textBox1.Text = leRapportChoisi.idRapport.ToString();
-            ChargerEchantillonsPresentes(leRapportChoisi);
+            
 
         }
 
